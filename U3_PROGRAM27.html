@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .image-table {
+            width: 500px;
+            height: 300px;
+            border-collapse: collapse;
+            /* Replace the URL below with your actual image path */
+            background-image: url('https://images.unsplash.com/photo-1518655048521-f130df041f66?auto=format&fit=crop&w=500&q=80');
+            background-size: cover;
+            background-position: center;
+            border: 2px solid #333;
+        }
+
+        .image-table td {
+            /* Semi-transparent background so text is readable over the image */
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 1px solid #000;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        
+        /* Optional: Hover effect to see the image more clearly */
+        .image-table td:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Table with Background Image</h2>
+
+    <table class="image-table">
+        <tr>
+            <td>Category A</td>
+            <td>Category B</td>
+        </tr>
+        <tr>
+            <td>Data Point 1</td>
+            <td>Data Point 2</td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Example</title>
+    <style>
+        body {
+            /* Replace 'your-image.jpg' with your actual file path or URL */
+            background-image: url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05');
+            
+            /* Center the background image */
+            background-position: center; 
+            
+            /* Do not repeat the image */
+            background-repeat: no-repeat; 
+            
+            /* Scale the image to cover the entire screen */
+            background-size: cover; 
+            
+            /* Fixed background so it doesn't scroll with the content */
+            background-attachment: fixed;
+            
+            /* Fallback color if the image fails to load */
+            background-color: #cccccc;
+            
+            /* Standard text styling for visibility */
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .content {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>This page features a full-screen background image.</p>
+    </div>
+
+</body>
+</html>
