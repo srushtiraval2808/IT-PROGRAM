@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal CSS Example</title>
+    <style>
+        p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<p>This is a green colored text using Internal CSS.</p>
+
+</body>
+</html>
