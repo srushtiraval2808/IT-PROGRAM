@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events</title>
+</head>
+<body onload="pageLoaded()">
+
+<h2>JavaScript Events Demo</h2>
+
+<!-- Mouse Events -->
+<button onclick="clickEvent()">Click Me</button><br><br>
+<div onmouseover="mouseOver()" onmouseout="mouseOut()" style="width:200px;height:50px;background:lightgray;">
+    Hover over me
+</div><br>
+
+<!-- Keyboard Event -->
+<input type="text" onkeypress="keyPress()" placeholder="Press any key"><br><br>
+
+<!-- Form Event -->
+<form onsubmit="submitForm()">
+    <input type="text" placeholder="Enter name">
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    // Page Load Event
+    function pageLoaded() {
+        alert("Page Loaded");
+    }
+
+    // Mouse Events
+    function clickEvent() {
+        alert("Button Clicked");
+    }
+
+    function mouseOver() {
+        console.log("Mouse Over");
+    }
+
+    function mouseOut() {
+        console.log("Mouse Out");
+    }
+
+    // Keyboard Event
+    function keyPress() {
+        alert("Key Pressed");
+    }
+
+    // Form Event
+    function submitForm() {
+        alert("Form Submitted");
+    }
+</script>
+
+</body>
+</html>

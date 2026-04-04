@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mouse Events</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        #box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Mouse Events in jQuery</h2>
+
+<div id="box">Hover or Click Me</div>
+
+<script>
+    $(document).ready(function(){
+
+        // Click Event
+        $("#box").click(function(){
+            alert("Box Clicked");
+        });
+
+        // Double Click Event
+        $("#box").dblclick(function(){
+            alert("Box Double Clicked");
+        });
+
+        // Mouse Enter Event
+        $("#box").mouseenter(function(){
+            $(this).css("background-color","yellow");
+        });
+
+        // Mouse Leave Event
+        $("#box").mouseleave(function(){
+            $(this).css("background-color","lightblue");
+        });
+
+    });
+</script>
+
+</body>
+</html>

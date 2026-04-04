@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Events in jQuery</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        input {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Form Events Example</h2>
+
+<form id="myForm">
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="text" id="email" placeholder="Enter your email">
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    $(document).ready(function(){
+
+        // Focus Event
+        $("#name").focus(function(){
+            $(this).css("background-color", "lightyellow");
+        });
+
+        // Blur Event
+        $("#name").blur(function(){
+            $(this).css("background-color", "white");
+        });
+
+        // Change Event
+        $("#email").change(function(){
+            alert("Email changed");
+        });
+
+        // Submit Event
+        $("#myForm").submit(function(){
+            alert("Form submitted");
+        });
+
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Keyboard Events</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        input {
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Keyboard Events in jQuery</h2>
+
+<input type="text" id="textbox" placeholder="Type something...">
+
+<script>
+    $(document).ready(function(){
+
+        // Keydown Event
+        $("#textbox").keydown(function(){
+            console.log("Key Down");
+        });
+
+        // Keypress Event
+        $("#textbox").keypress(function(){
+            console.log("Key Pressed");
+        });
+
+        // Keyup Event
+        $("#textbox").keyup(function(){
+            alert("Key Released");
+        });
+
+    });
+</script>
+
+</body>
+</html>
